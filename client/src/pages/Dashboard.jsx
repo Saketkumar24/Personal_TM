@@ -78,7 +78,7 @@ const Dashboard = () => {
     {
       _id: "4",
       label: "TO-DO",
-      total: totals["todo"],
+      total: totals["todo"] || 0,
       icon: <FaArrowsToDot />,
       bg: "bg-[#be185d]" || 0,
     },
@@ -162,15 +162,15 @@ const UserTable = ({ users }) => {
     </div>
   );
 };
-
+const ICONS = {
+  high: <MdKeyboardDoubleArrowUp />,
+  medium: <MdKeyboardArrowUp />,
+  low: <MdKeyboardArrowDown />,
+};
 const TaskTable = ({ tasks }) => {
   const { user } = useSelector((state) => state.auth);
 
-  const ICONS = {
-    high: <MdKeyboardDoubleArrowUp />,
-    medium: <MdKeyboardArrowUp />,
-    low: <MdKeyboardArrowDown />,
-  };
+
 
   const TableHeader = () => (
     <thead className='border-b border-gray-300 dark:border-gray-600'>
