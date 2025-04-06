@@ -27,7 +27,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://localhost:3001",
-      "https://personal-tm-frontend.onrender.com",
+      "https://prismatic-lokum-aadc9d.netlify.app/",
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
