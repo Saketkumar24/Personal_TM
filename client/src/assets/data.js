@@ -38,7 +38,7 @@ export const summary = {
       activities: [],
       subTasks: [
         {
-          title: "Task manager youtube tutorial",
+          title: "Task manager 1",
           date: "2024-02-09T00:00:00.000Z",
           tag: "tutorial",
           _id: "65c5f153b5204a81bde866c8",
@@ -1101,7 +1101,7 @@ export const tasks = [
 
 export const user = {
   _id: "662f32ffd1303cc",
-  name: "Codewave",
+  name: "Saket Kumar Chaudhary",
   title: "Administrator",
   role: "Admin",
   email: "admin@mts.com",
