@@ -1,4 +1,4 @@
-import Dashboard from "./dashboard";
+import Dashboard from "./Dashboard";
 import Login from "./Login";
 import TaskDetail from "./TaskDetails";
 import Tasks from "./Tasks";
