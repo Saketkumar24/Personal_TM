@@ -21,20 +21,23 @@ app.use(
       "http://localhost:3001",
       "https://prismatic-lokum-aadc9d.netlify.app",
     ],
-    methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
 );
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 // app.use(morgan("dev"));
 
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
 app.use("/api", routes);
 app.use("/api/task", taskRoutes); 
 
 app.use(routeNotFound);
 app.use(errorHandler);
+
 
 app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
