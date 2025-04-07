@@ -8,19 +8,19 @@ import routes from "./routes/index.js";
 import dbConnection from "./utils/connectDB.js";
 import taskRoutes from './routes/taskRoutes.js';
 
-
-
 dotenv.config();
-
 dbConnection();
 
 const PORT = process.env.PORT || 8800;
-
 const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001", "https://prismatic-lokum-aadc9d.netlify.app/"],
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:3001",
+      "https://prismatic-lokum-aadc9d.netlify.app",
+    ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
@@ -28,14 +28,13 @@ app.use(
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 app.use(cookieParser());
+// app.use(morgan("dev"));
 
-//app.use(morgan("dev"));
 app.use("/api", routes);
+app.use("/api/task", taskRoutes); 
 
 app.use(routeNotFound);
 app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
-app.use("/api/task", taskRoutes);
