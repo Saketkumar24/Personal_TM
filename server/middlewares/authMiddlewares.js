@@ -4,6 +4,7 @@ import User from "../models/userModel.js";
 const protectRoute = async (req, res, next) => {
   try {
     let token = req.cookies?.token;
+    console.log(token)
 
     if (token) {
       const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
@@ -11,6 +12,7 @@ const protectRoute = async (req, res, next) => {
       const resp = await User.findById(decodedToken.userId).select(
         "isAdmin email"
       );
+      console.log(resp)
 
       req.user = {
         email: resp.email,
