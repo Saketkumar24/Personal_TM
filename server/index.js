@@ -19,14 +19,14 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://localhost:3001",
-      "https://prismatic-lokum-aadc9d.netlify.app",
+      "https://prismatic-lokum-aadc9d.netlify.app/",
     ],
     credentials: true,
   })
 );
 
 app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 // app.use(morgan("dev"));
 
