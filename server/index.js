@@ -19,7 +19,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://localhost:3001",
-      "https://prismatic-lokum-aadc9d.netlify.app",
+      "https://joyful-faloodeh-480fb4.netlify.app",
     ],
     credentials: true,
   })
