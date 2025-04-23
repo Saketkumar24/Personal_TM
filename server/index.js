@@ -33,8 +33,9 @@ app.use(cookieParser());
 app.get('/', (req, res) => {
   res.send('API is running...');
 });
-app.use("/api", routes);
+
 app.use("/api/task", taskRoutes); 
+app.use("/api", routes);
 
 app.use(routeNotFound);
 app.use(errorHandler);
