@@ -20,7 +20,6 @@ app.use(
       "http://localhost:3000",
       "http://localhost:3001",
       "https://personalmanager.onrender.com",
-      "https://personal-tm.onrender.com"
     ],
     credentials: true,
   })
