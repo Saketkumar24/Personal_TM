@@ -19,7 +19,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://localhost:3001",
-      "https://joyful-faloodeh-480fb4.netlify.app",
+      "https://personalmanager.onrender.com",
     ],
     credentials: true,
   })
