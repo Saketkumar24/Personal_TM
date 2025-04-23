@@ -8,7 +8,6 @@ export const taskApiSlice = apiSlice.injectEndpoints({
         url: `${TASKS_URL}/create`,
         method: "POST",
         body: data,
-       
       }),
     }),
 
@@ -84,6 +83,7 @@ export const taskApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${TASKS_URL}/dashboard`,
         method: "GET",
+        credentials:"include",
        
       }),
     }),
