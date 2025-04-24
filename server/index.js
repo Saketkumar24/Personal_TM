@@ -19,7 +19,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://localhost:3001",
-      "https://personalmanager.onrender.com",
+      "https://personal-tm.vercel.app",
       "https://personal-tm.onrender.com",
     ],
     credentials: true,
