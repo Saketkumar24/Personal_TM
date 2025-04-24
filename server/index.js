@@ -19,7 +19,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://localhost:3001",
-      "https://personalmanager.onrender.com/api",
+      "https://personalmanager.onrender.com",
       "https://personal-tm.onrender.com",
     ],
     credentials: true,
