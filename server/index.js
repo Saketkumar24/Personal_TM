@@ -20,8 +20,7 @@ app.use(
       "http://localhost:3000",
       "http://localhost:3001",
       "https://personal-tm.vercel.app",
-      "https://personal-tm.onrender.com",
-    ],
+        ],
     credentials: true,
   })
 );
