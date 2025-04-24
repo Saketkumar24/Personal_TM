@@ -21,7 +21,7 @@ app.use(
       "http://localhost:3001",
       "https://personal-tm.vercel.app",
         ],
-    credentials: true,
+    credentials: "include",
   })
 );
 
