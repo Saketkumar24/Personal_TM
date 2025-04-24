@@ -22,7 +22,7 @@ const Register = () => {
             const res = await registerUser({ ...data, isAdmin: true }).unwrap();
             dispatch(setCredentials(res));
             toast.success("Registration Successful!");
-            navigate("/dashboard");
+            navigate("/log-in");
         } catch (err) {
             toast.error(err?.data?.message || "Registration failed");
         }
