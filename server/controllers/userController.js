@@ -5,6 +5,7 @@ import createJWT from "../utils/index.js";
 
 // POST request - login user
 const loginUser = asyncHandler(async (req, res) => {
+  console.log(req.body)
   const { email, password } = req.body;
 
   const user = await User.findOne({ email });

@@ -40,7 +40,7 @@ const Register = () => {
 
                 <Textbox
                     label='Name'
-                    placeholder='Raju Kumar Chaudhary'
+                    placeholder='Your Name'
                     name='name'
                     className='w-full rounded-full'
                     register={register("name", { required: "Name is required" })}
