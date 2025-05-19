@@ -100,7 +100,7 @@ const App = () => {
       <div className='w-full min-h-screen bg-[#f3f4f6] dark:bg-[#0d0d0df4]'>
         <Routes>
           <Route element={<Layout />}>
-            <Route index psth='/' element={<Navigate to='/dashboard' />} />
+            <Route index path='/' element={<Navigate to='/dashboard' />} />
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/tasks' element={<Tasks />} />
             <Route path='/completed/:status?' element={<Tasks />} />
